@@ -38,21 +38,23 @@ switch(true) {
 let nbr1 = prompt("Entrez le premier nombre :");
 let operateur = prompt("Entrez l'opérateur (+, -, *, /) :");
 let nbr2 = prompt("Entrez le deuxième nombre :");
+let resultat
 
 switch(operateur) {
-  case "+":
-    alert(`Bravo, la réponse était bien ${nbr1 + nbr2} !`);
+case "+":
+    resultat = nbr1 + nbr2;
     break;
-  case "-":
-    alert(`Bravo, la réponse était bien ${nbr1 - nbr2} !`);
+case "-":
+    resultat = nbr1 - nbr2;
     break;
-  case "*":
-    alert(`Bravo, la réponse était bien ${nbr1 * nbr2} !`);
+case "*":
+    resultat = nbr1 * nbr2;
     break;
-  case "/":
-    alert(`Bravo, la réponse était bien ${nbr1 / nbr2} !`);
+case "/":
+    resultat = nbr1 / nbr2;
     break;
-  default:
+ default:
     console.log("inconnu");
 }
+alert(resultat)
 
