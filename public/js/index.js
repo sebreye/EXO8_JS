@@ -11,16 +11,16 @@ switch(semaine) {
     default : 
         alert("tu n'as rien faire faire frère casse pas la tête")
 }
-let semaine = prompt("jour de la semaine")
-switch(semaine) {
-    case 'lundi' :
-        alert('tu dois aller à MolenGeek');
+let météo = prompt("avis météo")
+switch(météo) {
+    case 'il pleut' :
+        alert('prends un parapluie');
         break;
-    case 'mardi' : 
-        alert('tu as rendez-vous chez le dentiste')
+    case 'il fait chaud' : 
+        alert('met un t-shirt')
         break;
-    case 'mercredi' :
-        alert('tu as entrainement de foot')
+    case 'il fait froid' :
+        alert('mets une veste')
     default : 
-        alert("tu n'as rien faire faire frère casse pas la tête")
+        alert("réfléchis un peu nan")
 }
