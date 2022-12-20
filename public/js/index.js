@@ -24,3 +24,14 @@ switch(météo) {
     default : 
         alert("réfléchis un peu nan")
 }
+let valeur = prompt("Entrez une valeur :")
+switch(valeur) {
+    case (valeur == valeur/2) : 
+        alert('ce nombre est un mutiple de 2')
+        break;
+    case (valeur != valeur/2) :
+        alert ('ce nombre est pas multiple de 2')
+        break;
+    default :
+        alert ("ceci n'est pas un nombre")
+}
