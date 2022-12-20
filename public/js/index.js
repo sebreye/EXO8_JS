@@ -24,14 +24,35 @@ switch(météo) {
     default : 
         alert("réfléchis un peu nan")
 }
-let valeur = prompt("Entrez une valeur :")
-switch(valeur) {
-    case (valeur == valeur/2) : 
+let valeur = +prompt("Entrez une valeur :")
+switch(true) {
+    case valeur % 2 == 0: 
         alert('ce nombre est un mutiple de 2')
         break;
-    case (valeur != valeur/2) :
+    default : 
         alert ('ce nombre est pas multiple de 2')
-        break;
-    default :
-        alert ("ceci n'est pas un nombre")
+    
 }
+
+
+let nbr1 = prompt("Entrez le premier nombre :");
+let operateur = prompt("Entrez l'opérateur (+, -, *, /) :");
+let nbr2 = prompt("Entrez le deuxième nombre :");
+
+switch(operateur) {
+  case "+":
+    alert(`Bravo, la réponse était bien ${nbr1 + nbr2} !`);
+    break;
+  case "-":
+    alert(`Bravo, la réponse était bien ${nbr1 - nbr2} !`);
+    break;
+  case "*":
+    alert(`Bravo, la réponse était bien ${nbr1 * nbr2} !`);
+    break;
+  case "/":
+    alert(`Bravo, la réponse était bien ${nbr1 / nbr2} !`);
+    break;
+  default:
+    console.log("inconnu");
+}
+
